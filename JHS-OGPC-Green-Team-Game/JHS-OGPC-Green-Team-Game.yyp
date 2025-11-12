@@ -38,6 +38,8 @@
     {"id":{"name":"Player","path":"objects/Player/Player.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"PlayerSprite","path":"sprites/PlayerSprite/PlayerSprite.yy",},},
+    {"id":{"name":"TempTileSet","path":"sprites/TempTileSet/TempTileSet.yy",},},
+    {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

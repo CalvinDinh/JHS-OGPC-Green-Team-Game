@@ -3,33 +3,31 @@ var _right = 0;
 var _up = 0;
 var _down = 0;
 
-var joshtest = 0;
 
-
-var l1DFF4348_0;
-l1DFF4348_0 = keyboard_check(ord("A"));
-if (l1DFF4348_0)
+var keyA;
+keyA = keyboard_check(ord("A"));
+if (keyA)
 {
 	_left = 1;
 }
 
-var l547BEBAD_0;
-l547BEBAD_0 = keyboard_check(ord("D"));
-if (l547BEBAD_0)
+var keyD;
+keyD = keyboard_check(ord("D"));
+if (keyD)
 {
 	_right = 1;
 }
 
-var l605D3F58_0;
-l605D3F58_0 = keyboard_check(ord("W"));
-if (l605D3F58_0)
+var keyW;
+keyW = keyboard_check(ord("W"));
+if (keyW)
 {
 	_up = 1;
 }
 
-var l7C48214C_0;
-l7C48214C_0 = keyboard_check(ord("S"));
-if (l7C48214C_0)
+var keyS;
+keyS = keyboard_check(ord("S"));
+if (keyS)
 {
 	_down = 1;
 }
@@ -39,14 +37,5 @@ var _vspd = _down - _up;
 
 if(_hspd !=0 || _vspd !=0)
 {
-	var _spd = 4;
-
-	var _dir = point_direction(0, 0, _hspd, _vspd);
-
-	var _xadd = lengthdir_x(_spd, _dir);
-
-	var _yadd = lengthdir_y(_spd, _dir);
-
-	x += _xadd;
-	y += _yadd;
+	move_and_collide(_hspd * playerspeed, _vspd * playerspeed, tilemap, undefined, undefined, undefined, playerspeed, playerspeed);
 }
