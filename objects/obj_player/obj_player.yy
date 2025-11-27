@@ -1,11 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Player",
+  "%Name":"obj_player",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Player",
+  "name":"obj_player",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerSprite",
-    "path":"sprites/PlayerSprite/PlayerSprite.yy",
+    "name":"PlayerPlaceholder",
+    "path":"sprites/PlayerPlaceholder/PlayerPlaceholder.yy",
   },
   "spriteMaskId":null,
   "visible":true,
