@@ -44,6 +44,7 @@
     {"id":{"name":"EnemyPlaceholder","path":"sprites/EnemyPlaceholder/EnemyPlaceholder.yy",},},
     {"id":{"name":"HeavyAttack","path":"sprites/HeavyAttack/HeavyAttack.yy",},},
     {"id":{"name":"NormalAttack","path":"sprites/NormalAttack/NormalAttack.yy",},},
+    {"id":{"name":"NPCPlaceholder","path":"sprites/NPCPlaceholder/NPCPlaceholder.yy",},},
     {"id":{"name":"PlayerPlaceholder","path":"sprites/PlayerPlaceholder/PlayerPlaceholder.yy",},},
     {"id":{"name":"Run","path":"sprites/Run/Run.yy",},},
   ],
