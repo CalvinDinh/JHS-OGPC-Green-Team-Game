@@ -67,12 +67,16 @@ var l7C48214C_0;l7C48214C_0 = keyboard_check(ord("S"));if (l7C48214C_0){	///
 /// @DnDVersion : 1
 /// @DnDHash : 34241A72
 /// @DnDInput : 2
+/// @DnDApplyTo : all
 /// @DnDArgument : "var" "_hspd"
 /// @DnDArgument : "value" "_right - _left"
 /// @DnDArgument : "var_1" "_vspd"
 /// @DnDArgument : "value_1" "_down - _up"
+with(all) {
 var _hspd = _right - _left;
 var _vspd = _down - _up;
+
+}
 
 /// @DnDAction : YoYo Games.Common.If_Expression
 /// @DnDVersion : 1
