@@ -53,6 +53,18 @@ if(global._hspd !=0 || global._vspd !=0)
 	
 }
 
+if (x != xprevious) || (y != yprevious){
+    //update record of positions
+    //shift records down by one position
+    for(var i = array_size-1; i > 0; i--){
+        pos_x[i] = pos_x[i-1];
+        pos_y[i] = pos_y[i-1];
+    }
+    //record new position
+    pos_x[0] = x;
+    pos_y[0] = y;
+}
+
 
 
 	
