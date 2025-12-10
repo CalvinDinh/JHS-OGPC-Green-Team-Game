@@ -1,1 +1,1 @@
-record = 16;
+record = 30;
