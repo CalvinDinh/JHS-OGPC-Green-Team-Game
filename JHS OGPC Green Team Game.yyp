@@ -37,6 +37,7 @@
   "name":"JHS OGPC Green Team Game",
   "resources":[
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_minion","path":"objects/obj_minion/obj_minion.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_runner","path":"objects/obj_runner/obj_runner.yy",},},
     {"id":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},},
@@ -46,6 +47,10 @@
     {"id":{"name":"BlockPlaceholder","path":"sprites/BlockPlaceholder/BlockPlaceholder.yy",},},
     {"id":{"name":"EnemyPlaceholder","path":"sprites/EnemyPlaceholder/EnemyPlaceholder.yy",},},
     {"id":{"name":"HeavyAttack","path":"sprites/HeavyAttack/HeavyAttack.yy",},},
+    {"id":{"name":"MinionDown","path":"sprites/MinionDown/MinionDown.yy",},},
+    {"id":{"name":"MinionLeft","path":"sprites/MinionLeft/MinionLeft.yy",},},
+    {"id":{"name":"MinionRight","path":"sprites/MinionRight/MinionRight.yy",},},
+    {"id":{"name":"MinionUp","path":"sprites/MinionUp/MinionUp.yy",},},
     {"id":{"name":"NormalAttack","path":"sprites/NormalAttack/NormalAttack.yy",},},
     {"id":{"name":"PlayerPlaceholder","path":"sprites/PlayerPlaceholder/PlayerPlaceholder.yy",},},
     {"id":{"name":"Run","path":"sprites/Run/Run.yy",},},
