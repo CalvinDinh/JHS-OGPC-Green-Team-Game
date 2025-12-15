@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_minion",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_wall",
+  "eventList":[],
   "managed":true,
-  "name":"obj_minion",
+  "name":"obj_wall",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -29,10 +26,10 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
-    "name":"FollowingGuyPlaceholder",
-    "path":"sprites/FollowingGuyPlaceholder/FollowingGuyPlaceholder.yy",
+    "name":"BlockPlaceholder",
+    "path":"sprites/BlockPlaceholder/BlockPlaceholder.yy",
   },
   "spriteMaskId":null,
   "visible":true,

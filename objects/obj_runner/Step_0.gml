@@ -1,61 +1,68 @@
-var _left = 0;
-var _right = 0;
-var _up = 0;
-var _down = 0;
+// movement and collisions courtesy https://www.youtube.com/watch?v=qTqDY4JtFfo&list=PL14Yj-e2sgzxTXIRYH-J2_PWAZRMahfLb
 
-var l1DFF4348_0;
-l1DFF4348_0 = keyboard_check(ord("A"));
-if (l1DFF4348_0)
-{
-	_left = 1;
+
+var rightPressed = keyboard_check(ord("D"));
+var leftPressed = keyboard_check(ord("A"));
+var upPressed = keyboard_check(ord("W"));
+var downPressed = keyboard_check(ord("S"));
+
+// player movement
+	// get direction
+	var _horizKey = rightPressed - leftPressed;
+	var _vertKey = downPressed - upPressed;
+	moveDir = point_direction( 0, 0, _horizKey, _vertKey);
+	
+	// get x and y speeds
+	var _spd = 0;
+	var _inputLevel = point_distance(0,0,_horizKey,_vertKey);
+	_inputLevel = clamp(_inputLevel, 0, 1);
+	_spd = 2*_inputLevel; // change constant to make slower or faster
+	
+	xspd = lengthdir_x(_spd, moveDir);
+	yspd = lengthdir_y(_spd, moveDir);
+	
+	// colisions
+	if place_meeting(x+xspd, y, obj_wall){
+		xspd = 0
+	
+	}
+	if place_meeting(x, y+yspd, obj_wall){
+		yspd = 0
+	
+	}
+	
+	
+	//move player + sprite select
+	
+	// right
+	if (xspd > 0) {
+	image_speed = 1
+	sprite_index = RunRight;;
+	}
+	// left
+	if (xspd < 0) {
+	image_speed = 1;
 	sprite_index = RunLeft;
-}
-
-var l547BEBAD_0;
-l547BEBAD_0 = keyboard_check(ord("D"));
-if (l547BEBAD_0)
-{
-	_right = 1;
-	sprite_index = RunRight;
-}
-
-var l605D3F58_0;
-l605D3F58_0 = keyboard_check(ord("W"));
-if (l605D3F58_0)
-{
-	_up = 1;
-	sprite_index = RunUp;
-}
-
-var l7C48214C_0;
-l7C48214C_0 = keyboard_check(ord("S"));
-if (l7C48214C_0)
-{
-	_down = 1;
-	sprite_index = RunDown;
-}
+	}
+	// up
+	if (yspd > 0) {
+	image_speed = 1
+	sprite_index = RunDown; // flipped for some reason ON PURPOSE NO TOUCHY
+	}
+	// down
+	if (yspd < 0) {
+	image_speed = 1
+	sprite_index = RunUp;  // flipped for some reason ON PURPOSE NO TOUCHY
+	}
+	if (xspd = 0 && yspd = 0){
+	image_speed = 0;
+	}
 
 
-global._hspd = _right - _left;
-global._vspd = _down - _up;
+	x+=xspd;
+	y+=yspd;
 
 
-if(global._hspd !=0 || global._vspd !=0)
-{
-	var _spd = 4;
-
-	var _dir = point_direction(0, 0, global._hspd, global._vspd);
-
-	var _xadd = lengthdir_x(_spd, _dir);
-
-	var _yadd = lengthdir_y(_spd, _dir);
-
-	x += _xadd;
-	y += _yadd;
-	
-
-	
-}
 
 
 	
