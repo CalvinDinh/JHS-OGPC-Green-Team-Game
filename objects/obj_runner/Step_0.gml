@@ -34,28 +34,35 @@ var downPressed = keyboard_check(ord("S"));
 	
 	//move player + sprite select
 	
+	// one is up, two is down, three is left, four is right, 0 is idle
+	
 	// right
 	if (xspd > 0) {
 	image_speed = 1
-	sprite_index = RunRight;;
+	sprite_index = RunRight;
+	global.playerDirection = 4;
 	}
 	// left
 	if (xspd < 0) {
 	image_speed = 1;
 	sprite_index = RunLeft;
+	global.playerDirection = 3;
 	}
 	// up
 	if (yspd > 0) {
 	image_speed = 1
 	sprite_index = RunDown; // flipped for some reason ON PURPOSE NO TOUCHY
+	global.playerDirection = 1;
 	}
 	// down
 	if (yspd < 0) {
 	image_speed = 1
 	sprite_index = RunUp;  // flipped for some reason ON PURPOSE NO TOUCHY
+	global.playerDirection = 2;
 	}
 	if (xspd = 0 && yspd = 0){
 	image_speed = 0;
+	global.playerDirection = 0;
 	}
 
 
