@@ -8,7 +8,7 @@
     "children":[],
     "name":"Default",
   },
-  "defaultScriptType":1,
+  "defaultScriptType":2,
   "Folders":[
     {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.1.210",
+    "IDEVersion":"2024.14.3.217",
   },
   "name":"JHS OGPC Green Team Game",
   "resources":[
@@ -58,6 +58,8 @@
     {"id":{"name":"RunLeft","path":"sprites/RunLeft/RunLeft.yy",},},
     {"id":{"name":"RunRight","path":"sprites/RunRight/RunRight.yy",},},
     {"id":{"name":"RunUp","path":"sprites/RunUp/RunUp.yy",},},
+    {"id":{"name":"Sprite16","path":"sprites/Sprite16/Sprite16.yy",},},
+    {"id":{"name":"SpookySwamp","path":"tilesets/SpookySwamp/SpookySwamp.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

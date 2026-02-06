@@ -82,5 +82,3 @@ if (x != xprevious) || (y != yprevious){
     pos_x[0] = x;
     pos_y[0] = y;
 }
-	
-	

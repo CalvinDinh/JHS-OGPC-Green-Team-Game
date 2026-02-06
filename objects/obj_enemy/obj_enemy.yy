@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_enemy",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_runner","path":"objects/obj_runner/obj_runner.yy",},"eventNum":0,"eventType":4,"isDnD":true,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_enemy",
   "overriddenProperties":[],
