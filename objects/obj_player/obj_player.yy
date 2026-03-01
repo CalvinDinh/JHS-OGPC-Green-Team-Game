@@ -1,11 +1,7 @@
 {
   "$GMObject":"",
   "%Name":"obj_player",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_player",
   "overriddenProperties":[],
@@ -32,9 +28,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"PlayerPlaceholder",
-    "path":"sprites/PlayerPlaceholder/PlayerPlaceholder.yy",
+    "name":"spr_player_down_idle",
+    "path":"sprites/spr_player_down_idle/spr_player_down_idle.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }
