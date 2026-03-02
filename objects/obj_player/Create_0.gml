@@ -1,8 +1,6 @@
-
-global._hspd = 0;
-global._vspd = 0;
-array_size = 64;//the amount of positions to record
-for(var i = array_size-1; i >= 0; i--){
-    pos_x[i] = x;
-    pos_y[i] = y;
-}
+/// @DnDAction : YoYo Games.Instances.Create_Instance
+/// @DnDVersion : 1
+/// @DnDHash : 578967B1
+/// @DnDArgument : "objectid" "obj_player"
+/// @DnDSaveInfo : "objectid" "obj_player"
+instance_create_layer(0, 0, "Instances", obj_player);
