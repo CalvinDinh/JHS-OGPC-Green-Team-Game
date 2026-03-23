@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_enemy1",
-  "eventList":[],
+  "%Name":"obj_action_run",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_enemy1",
+  "name":"obj_action_run",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Battle",
+    "path":"folders/Objects/Battle.yy",
   },
   "parentObjectId":{
-    "name":"obj_enemy_parent",
-    "path":"objects/obj_enemy_parent/obj_enemy_parent.yy",
+    "name":"obj_action_parent",
+    "path":"objects/obj_action_parent/obj_action_parent.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_lizard",
-    "path":"sprites/spr_lizard/spr_lizard.yy",
+    "name":"spr_button_run",
+    "path":"sprites/spr_button_run/spr_button_run.yy",
   },
   "spriteMaskId":null,
   "visible":true,
