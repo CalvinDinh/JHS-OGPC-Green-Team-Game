@@ -1,71 +1,32 @@
-var _left = 0;
-var _right = 0;
-var _up = 0;
-var _down = 0;
+if (instance_exists(obj_dialog)) exit;
 
-var l1DFF4348_0;
-l1DFF4348_0 = keyboard_check(ord("A"));
-if (l1DFF4348_0)
+var _hor = keyboard_check(ord("D")) - keyboard_check(ord("A"));
+var _ver = keyboard_check(ord("S")) - keyboard_check(ord("W"));
+
+var _len = _hor!=0 || _ver!=0;
+var _dir = point_direction(0, 0, _hor, _ver);
+_hor = lengthdir_x(_len, _dir);
+_ver = lengthdir_y(_len, _dir);
+
+
+move_and_collide(_hor * move_speed,  _ver * move_speed,  tilemap, undefined, undefined, undefined, move_speed, move_speed);
+
+if (_hor != 0 or _ver != 0)
 {
-	_left = 1;
+    if (_ver > 0) sprite_index = spr_player_walk_down;
+        else if (_ver < 0) sprite_index = spr_player_walk_up;
+            else if (_hor > 0) sprite_index = spr_player_walk_right;
+                else if (_hor < 0) sprite_index = spr_player_walk_left;
 }
-
-var l547BEBAD_0;
-l547BEBAD_0 = keyboard_check(ord("D"));
-if (l547BEBAD_0)
+else 
 {
-	_right = 1;
+	if (sprite_index == spr_player_walk_right) sprite_index = spr_player_idle_right;
+        else if (sprite_index == spr_player_walk_left) sprite_index = spr_player_idle_left;
+            else if (sprite_index == spr_player_walk_up) sprite_index = spr_player_idle_up;
+                else if (sprite_index == spr_player_walk_down) sprite_index = spr_player_idle_down;
 }
 
-var l605D3F58_0;
-l605D3F58_0 = keyboard_check(ord("W"));
-if (l605D3F58_0)
+if (hp <= 0)
 {
-	_up = 1;
+    game_restart();
 }
-
-var l7C48214C_0;
-l7C48214C_0 = keyboard_check(ord("S"));
-if (l7C48214C_0)
-{
-	_down = 1;
-}
-
-
-global._hspd = _right - _left;
-global._vspd = _down - _up;
-
-
-if(global._hspd !=0 || global._vspd !=0)
-{
-	var _spd = 4;
-
-	var _dir = point_direction(0, 0, global._hspd, global._vspd);
-
-	var _xadd = lengthdir_x(_spd, _dir);
-
-	var _yadd = lengthdir_y(_spd, _dir);
-
-	x += _xadd;
-	y += _yadd;
-	
-
-	
-}
-
-if (x != xprevious) || (y != yprevious){
-    //update record of positions
-    //shift records down by one position
-    for(var i = array_size-1; i > 0; i--){
-        pos_x[i] = pos_x[i-1];
-        pos_y[i] = pos_y[i-1];
-    }
-    //record new position
-    pos_x[0] = x;
-    pos_y[0] = y;
-}
-
-
-
-	
-	
