@@ -1,5 +1,6 @@
 move_speed = 10;
-
+global.mushrooms = 0;
+global.food = 0;
 tilemap = layer_tilemap_get_id("Tiles_Collision");
 
 hp = 10;

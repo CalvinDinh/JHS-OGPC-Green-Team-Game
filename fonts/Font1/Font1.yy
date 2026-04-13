@@ -509,7 +509,7 @@
   "name":"Font1",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Notes/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[
