@@ -10,7 +10,7 @@ charge = 0;
 
 level = 1;
 xp = 0;
-xp_require = 100;
+xp_require = 50;
 
 function add_xp(_xp_to_add)
 {
@@ -21,14 +21,14 @@ function add_xp(_xp_to_add)
         xp -= xp_require;
         xp_require *= 1.25;
         
-        hp_total += 5;
+        hp_total += 1;
         hp = hp_total;
-        damage += 1;
+        damage += 0.25;
         
         create_dialog([
         {
             name: "You feel a warmth in your core...",
-            msg: $"You feel more powerful as you devour more and more monsters!\nYour strength have been increased:\nLVL: {level}\nVITALITY {hp_total}\nPOWER {damage}"
+            msg: $"You feel more powerful as you defeat and consume more and more monsters!\nYour strength have been increased:\nLVL: {level}\nVITALITY {hp_total}\nPOWER {damage}"
         }
         ])
     }

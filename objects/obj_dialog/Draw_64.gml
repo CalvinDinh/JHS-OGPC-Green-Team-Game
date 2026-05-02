@@ -8,7 +8,7 @@ draw_sprite_stretched(spr_box, 0, _dx, _dy, _boxw, _boxh);
 _dx += 50;
 _dy += 50;
 
-draw_set_font(Font1);
+draw_set_font(fnt_FelixTitling);
 
 var _name = messages[current_message].name;
 draw_set_color(global.char_colors[$ _name]);

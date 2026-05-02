@@ -1,4 +1,4 @@
-var _enemy_damage = obj_battle_enemy.data.damage * random_range(0.75, 1.25);
+var _enemy_damage = obj_battle_enemy.data.damage * random_range(0, 1.5);
 obj_battle_player.data.hp -= _enemy_damage;
 
 enemy_turn = 0;

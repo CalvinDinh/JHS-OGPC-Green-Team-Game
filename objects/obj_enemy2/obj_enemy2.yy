@@ -35,8 +35,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"EnemyPlaceholder",
-    "path":"sprites/EnemyPlaceholder/EnemyPlaceholder.yy",
+    "name":"spr_ooze",
+    "path":"sprites/spr_ooze/spr_ooze.yy",
   },
   "spriteMaskId":null,
   "visible":true,

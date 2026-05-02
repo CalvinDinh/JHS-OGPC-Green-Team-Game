@@ -1,6 +1,6 @@
-x -= 100;
+x -= 50;
 
-if (x < xstart - 1750)
+if (x < xstart - 250)
 {
     alarm[1] = 1;
 }

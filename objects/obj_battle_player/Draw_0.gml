@@ -1,7 +1,7 @@
 draw_self();
 
-var _x = xstart - 540;
-var _y = ystart + 650;
+var _x = xstart - 250;
+var _y = ystart + 475;
 var _w = 1000;
 var _h = 250;
 
