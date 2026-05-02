@@ -19,6 +19,13 @@ other.hp = other.hp + 1;
 /// @DnDArgument : "var" "other.hp"
 other.hp = min(other.hp, other.hp_total);
 
+/// @DnDAction : YoYo Games.Common.Variable
+/// @DnDVersion : 1
+/// @DnDHash : 279F272F
+/// @DnDArgument : "expr" "other.xp + 5"
+/// @DnDArgument : "var" "other.xp"
+other.xp = other.xp + 5;
+
 /// @DnDAction : YoYo Games.Instances.Destroy_Instance
 /// @DnDVersion : 1
 /// @DnDHash : 64C82841

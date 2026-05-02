@@ -83,6 +83,7 @@
     {"id":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"id":{"name":"Dialogue","path":"scripts/Dialogue/Dialogue.yy",},},
     {"id":{"name":"Drawing","path":"scripts/Drawing/Drawing.yy",},},
+    {"id":{"name":"snd_attack","path":"sounds/snd_attack/snd_attack.yy",},},
     {"id":{"name":"snd_battle","path":"sounds/snd_battle/snd_battle.yy",},},
     {"id":{"name":"snd_gameover","path":"sounds/snd_gameover/snd_gameover.yy",},},
     {"id":{"name":"snd_menu","path":"sounds/snd_menu/snd_menu.yy",},},
