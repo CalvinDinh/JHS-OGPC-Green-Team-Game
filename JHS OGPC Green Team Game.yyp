@@ -136,10 +136,10 @@
     {"roomId":{"name":"rm_forest_7","path":"rooms/rm_forest_7/rm_forest_7.yy",},},
     {"roomId":{"name":"rm_cave_8","path":"rooms/rm_cave_8/rm_cave_8.yy",},},
     {"roomId":{"name":"rm_finale_9","path":"rooms/rm_finale_9/rm_finale_9.yy",},},
+    {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
     {"roomId":{"name":"rm_battle","path":"rooms/rm_battle/rm_battle.yy",},},
     {"roomId":{"name":"rm_test","path":"rooms/rm_test/rm_test.yy",},},
     {"roomId":{"name":"rm_GameOver","path":"rooms/rm_GameOver/rm_GameOver.yy",},},
-    {"roomId":{"name":"rm_win","path":"rooms/rm_win/rm_win.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
